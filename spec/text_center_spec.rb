@@ -12,7 +12,7 @@ describe TextCenter do
     text_center = TextCenter.new(string)
 
     text_center = []
-    result = text_center
+    result = text_center.center_the_sting(string)
 
   #   create a method which fines the longest string
     # and compares it to every other line. Add padding
@@ -21,7 +21,7 @@ describe TextCenter do
 
 
     #return the centered string
-    expected_result = <<HEREDOC
+    expect(result).to eq <<HEREDOC
    "This is a short line",
 "This is a really long line",
     "and this is",

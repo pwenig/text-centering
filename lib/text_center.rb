@@ -4,4 +4,9 @@ class TextCenter
     @string = string
     
   end
+
+  def center_the_string
+    []
+
+  end
 end
